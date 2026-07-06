@@ -29,7 +29,7 @@ void main() {
         originalAdminFileContent = await adminFile.readAsString();
       }
 
-      final appFile = File('../assets/polity_content.json');
+      final appFile = File('../upscLearn/assets/polity_content.json');
       appFileExisted = await appFile.exists();
       if (appFileExisted) {
         originalAppFileContent = await appFile.readAsString();
@@ -47,7 +47,7 @@ void main() {
         await adminFile.delete();
       }
 
-      final appFile = File('../assets/polity_content.json');
+      final appFile = File('../upscLearn/assets/polity_content.json');
       if (appFileExisted) {
         await appFile.writeAsString(originalAppFileContent);
       } else if (await appFile.exists()) {
@@ -84,7 +84,7 @@ void main() {
       expect(success, isTrue);
 
       final adminFile = File('assets/polity_content.json');
-      final appFile = File('../assets/polity_content.json');
+      final appFile = File('../upscLearn/assets/polity_content.json');
 
       expect(await adminFile.exists(), isTrue);
       expect(await appFile.exists(), isTrue);

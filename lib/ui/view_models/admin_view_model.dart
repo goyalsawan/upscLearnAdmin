@@ -348,7 +348,7 @@ The Fundamental Duties serve as a constant reminder to every citizen that while 
       
       final List<String> targetPaths = [
         '/Users/sawantech/Desktop/Data/projects/upscLearn/assets/polity_content.json',
-        '/Users/sawantech/Desktop/Data/projects/upscLearn/upsc_admin_dashboard/assets/polity_content.json',
+        '/Users/sawantech/Desktop/Data/projects/upsc_admin_dashboard/assets/polity_content.json',
       ];
 
       bool success = true;
@@ -369,7 +369,7 @@ The Fundamental Duties serve as a constant reminder to every citizen that while 
       // Also try relative paths as fallback/backup
       final List<String> relativePaths = [
         'assets/polity_content.json',
-        '../assets/polity_content.json',
+        '../upscLearn/assets/polity_content.json',
       ];
       for (final path in relativePaths) {
         try {
