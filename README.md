@@ -1,4 +1,4 @@
-# upsc_admin_dashboard
+# upscLearnAdmin
 
 A new Flutter project.
 
